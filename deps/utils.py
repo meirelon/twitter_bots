@@ -1,3 +1,5 @@
+import os
+import pickle
 from gcloud import storage
 from tempfile import NamedTemporaryFile
 

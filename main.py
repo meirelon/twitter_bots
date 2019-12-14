@@ -16,7 +16,7 @@ def bernie_tweet(request):
 
     bot = load_pipeline(project_id=project,
                         bucket=bucket,
-                        destination_path=destination_path=,
+                        destination_path=destination_path,
                         filename=filename)
 
     return bot.make_short_sentence(140)
