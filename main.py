@@ -6,7 +6,7 @@ from gcloud import storage
 from tempfile import NamedTemporaryFile
 
 from deps.utils import load_pipeline
-from deps.utils import twitter_api
+from deps.utils import twitterApi
 
 
 
@@ -39,7 +39,7 @@ def tweet_send(request):
     access_token_secret = os.environ["ACCESS_TOKEN_SECRET"]
     tweet_type = os.environ["TWEET_TYPE"]
 
-    twitter = twitter_api.twitterApi(consumer_key=consumer_key,
+    twitter = twitterApi(consumer_key=consumer_key,
                      consumer_secret=consumer_secret,
                      access_token=access_token,
                      access_token_secret=access_token_secret)
