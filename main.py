@@ -32,7 +32,6 @@ def bernie_tweet(request):
 def tweet_send(request):
     #gcp
     project = os.environ["PROJECT_ID"]
-    destination_table = os.environ["DESTINATION_TABLE"]
     #twitter
     consumer_key = os.environ["CONSUMER_KEY"]
     consumer_secret = os.environ["CONSUMER_SECRET"]
