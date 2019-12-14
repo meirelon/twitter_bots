@@ -5,6 +5,7 @@ from datetime import datetime
 from gcloud import storage
 from tempfile import NamedTemporaryFile
 
+import tweepy
 from deps.utils import load_pipeline
 from deps.utils import twitterApi
 

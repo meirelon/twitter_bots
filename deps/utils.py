@@ -2,6 +2,7 @@ import os
 import pickle
 from gcloud import storage
 from tempfile import NamedTemporaryFile
+import tweepy
 
 def load_pipeline(project_id, bucket, destination_path, filename):
     client = storage.Client(project=project_id)
