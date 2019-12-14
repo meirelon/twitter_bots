@@ -24,4 +24,4 @@ def bernie_tweet(request):
     except:
         tweet = ""
 
-    return {"tweet": tweet}
+    return tweet
