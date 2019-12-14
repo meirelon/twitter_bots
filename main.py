@@ -19,4 +19,9 @@ def bernie_tweet(request):
                         destination_path=destination_path,
                         filename=filename)
 
-    return bot.make_short_sentence(140)
+    try:
+        tweet = bot.make_short_sentence(140)
+    except:
+        tweet = ""
+
+    return {"tweet": tweet}
