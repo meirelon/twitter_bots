@@ -68,10 +68,15 @@ def tank_tweet_send(request):
 
     filenames = filename.split(" ")
     if len(filenames)>1:
-        if datetime.now().hour > 12 and datetime.now().hour < 25:
-            value=0
+        # if datetime.now().hour > 12 and datetime.now().hour < 25:
+        #     value=0
+        # else:
+        #     value=random.randint(0,1)
+        if datetime.now().hour % 2 == 0:
+            value = 0
         else:
             value=random.randint(0,1)
+
         filename = filenames[value]
 
     bot = load_pipeline(project_id=project,
