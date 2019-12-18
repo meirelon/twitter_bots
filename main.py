@@ -67,7 +67,8 @@ def tank_tweet_send(request):
     # tweet_type = os.environ["TWEET_TYPE"]
 
     filenames = filename.split(" ")
-    if len(filenames)>1:
+    filenames_length = len(filenames)
+    if filenames_length > 1:
         # if datetime.now().hour > 12 and datetime.now().hour < 25:
         #     value=0
         # else:
@@ -75,7 +76,7 @@ def tank_tweet_send(request):
         if datetime.now().hour % 2 == 0:
             value = 0
         else:
-            value=random.randint(0,1)
+            value=random.randint(0,(filenames_length-1))
 
         filename = filenames[value]
 
