@@ -1,4 +1,4 @@
 twitter_scraper
-markovify
+markovify==0.7.2
 tweepy
 gcloud
